@@ -45,18 +45,38 @@ jest 00-variables
 ```
 > c'est pour dire "test le fichier 00-variables"
 
-et ça va te sortir un truc comme ça:
+et ça va te sortir plein de trucs 😱
+
+T'inquiètes, on va voir ça ensemble.
 
 ```
 FAIL  tests/00-variables.test.js
 Les variables
-  ✓ Définir une variable constante 'promo' avec la valeur "Zagreus" (22 ms)
-  ✕ Définir une variable constante 'firstname' avec le string 'John' (2 ms)
-  ✕ Définir une variable modifiable 'age' avec le chiffre '42' (1 ms)
-  ✕ Définir une variable constante 'oneMoreYear' avec le chiffre '1' (1 ms)
-  ✕ Définir une variable modifiable 'happyBirthsday' avec la l'addition de age et oneMoreYear (1 ms)
-  ✕ Changer la valeur de 'age' change la valeur de 'happyBirthsday' (2 ms)
-  ✕ Définir une variable 'pets' contenant les strings 'Garfield', 'Félix', 'Rantaplan', 'Robert' (2 ms)
-  ✕ Définir la variable 'jon' avec les bonnes propriétés (1 ms)
-  ✕ Changer la valeur de 'age' change l'age de John (1 ms)
+  ✓ Définir une variable constante 'promo' avec la valeur "Zagreus"
+  ✕ Définir une variable constante 'firstname' avec le string 'John'
+  ...
 ```
+> Ici, le premier test est réussi, tu le vois avec "✓"
+> Le deuxième est pas passé: "✕"
+
+D'ailleurs, on a plus de détail si on regarde bien:
+
+```
+● Les variables › Définir une variable constante 'firstname' avec le string 'John'
+
+  ReferenceError: firstname is not defined
+  ...
+```
+> Dans le fichier des variables, la partie **Définir une variable constante 'firstname' avec le string 'John'** est pas passé parce qu'on y a pas trouvé de variable `firstname`, c'est le message d'erreur qui le dit:
+> 🤖 `ReferenceError: firstname is not defined`
+
+Et enfin, en bas, on a le récap:
+
+```bash
+Test Suites: 1 failed, 1 total
+# T'as pas encore tout réussi pour les variables
+Tests:       8 failed, 1 passed, 9 total
+# Sur un total de 8 tests, on en a réussi 1!
+```
+
+💪 Allez, on fait la suite? 💪
