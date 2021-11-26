@@ -3,7 +3,7 @@ const { findVariableInCode } = require(`./read-code`);
 const path = require(`path`);
 
 describe(`Les variables`, () => {
-    const filePath = path.resolve(__dirname, `../01-les-bases/01-variables.js`);
+    const filePath = path.resolve(__dirname, `../src/00-les-bases/00-variables.js`);
 
     test(`Définir une variable constante 'promo' avec la valeur "Zagreus"`, async () => {
         const {value, keyword} = await findVariableInCode(`promo`, filePath);
