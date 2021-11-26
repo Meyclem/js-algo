@@ -1,0 +1,18 @@
+{
+  "name": "javascript-algo",
+  "version": "0.0.1",
+  "description": "Série d'exercices pour s'entraîner à l'aglo en JavaScript",
+  "main": "index.js",
+  "author": "Meyclem",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
