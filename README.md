@@ -43,6 +43,7 @@ On a prévu quelques tests pour toi. Pour voir ça, lance ça dans ton terminal:
 ```bash
 jest 00-variables
 ```
+
 > c'est pour dire "test le fichier 00-variables"
 
 et ça va te sortir plein de trucs 😱
@@ -56,7 +57,9 @@ Les variables
   ✕ Définir une variable constante 'firstname' avec le string 'John'
   ...
 ```
+
 > Ici, le premier test est réussi, tu le vois avec "✓"
+>
 > Le deuxième est pas passé: "✕"
 
 D'ailleurs, on a plus de détail si on regarde bien:
@@ -67,7 +70,9 @@ D'ailleurs, on a plus de détail si on regarde bien:
   ReferenceError: firstname is not defined
   ...
 ```
+
 > Dans le fichier des variables, la partie **Définir une variable constante 'firstname' avec le string 'John'** est pas passé parce qu'on y a pas trouvé de variable `firstname`, c'est le message d'erreur qui le dit:
+>
 > 🤖 `ReferenceError: firstname is not defined`
 
 Et enfin, en bas, on a le récap:
@@ -80,3 +85,25 @@ Tests:       8 failed, 1 passed, 9 total
 ```
 
 💪 Allez, on fait la suite? 💪
+
+### On s'arrête où?
+
+Tu sauras que c'est fini quand tous les tests d'un fichier sont passés:
+```
+PASS  tests/00-variables.test.js
+  Les variables
+    ✓ Définir une variable constante 'promo' avec la valeur "Zagreus"
+    ✓ Définir une variable constante 'firstname' avec le string 'John'
+    ✓ Définir une variable modifiable 'age' avec le chiffre '42'
+    ✓ Définir une variable constante 'oneMoreYear' avec le chiffre '1'
+    ✓ Définir une variable modifiable 'happyBirthsday' avec la l'addition de age et oneMoreYear
+    ✓ Changer la valeur de 'age' change la valeur de 'happyBirthsday'
+    ✓ Définir une variable 'pets' contenant les strings 'Garfield', 'Félix', 'Rantaplan', 'Robert'
+    ✓ Définir la variable 'jon' avec les bonnes propriétés
+    ✓ Changer la valeur de 'age' change l'age de John
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+```
+
+# 🤩
