@@ -4,12 +4,14 @@
       "es6": true,
       "jest": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "extends": "eslint:recommended",
   "rules": {
       "indent": ["error", 4],
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
-      "comma-dangle": ["error", "always"],
       "no-unused-vars": "error"
   }
 }
