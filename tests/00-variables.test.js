@@ -89,6 +89,27 @@ describe(`Les variables`, () => {
         expect(lastPet).toBe(`Nounours`);
     });
 
+    test(`Définir une variable constante 'allPets' avec la valeur jointe des éléments de 'pets'`, async () => {
+        const {value: pets} = await findVariableInCode(`pets`, filePath);
+        const expectedValue = pets.join(`, `);
+        const {value: allPets, keyword} = await findVariableInCode(`allPets`, filePath);
+
+        expect(keyword).toBe(`const`);
+        expect(allPets).toBe(expectedValue);
+    });
+
+    test(`Changer les éléments de 'pets' change la valeur de 'allPets'`, async () => {
+        const {value: pets} = await findVariableInCode(`pets`, filePath);
+        pets.push(`Nounours`);
+        const expectedValue = pets.join(`, `);
+        const { value: allPets } = await findVariableInCode(`allPets`, filePath, {
+            regex: /(let|const) allPets/,
+            string: `pets.push("Nounours"); $&`
+        });
+
+        expect(allPets).toBe(expectedValue);
+    });
+
     test(`Définir la variable 'jon' avec les bonnes propriétés`, async () => {
         const {value: jon, keyword} = await findVariableInCode(`jon`, filePath);
 

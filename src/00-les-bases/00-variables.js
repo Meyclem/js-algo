@@ -29,6 +29,14 @@ const garfield = pets[0];
 const lastPet = pets[pets.length - 1];
 
 /**
+ * Définir une variable const 'allPets' à partir de 'pets' qui doit avoir la valeur
+ * des élemnts du tableau, séparés, par ', ': exemple "tata, toto, ..."
+ * 📚 Documentation: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+ */
+
+const allPets = pets.join(', ');
+
+/**
  * Définir une variable constante 'jon' avec:
  * - une propriété 'firstname' et la valeur de la variable firstname
  * - une propriété 'age' et la valeur de la variable age
