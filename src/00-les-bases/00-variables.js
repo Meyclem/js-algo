@@ -22,6 +22,12 @@ let happyBirthsday = age + oneMoreYear;
 // Définir une variable 'pets' contenant les strings 'Garfield', 'Félix', 'Rantaplan', 'Robert'
 const pets = ['Garfield', 'Félix', 'Rantaplan', 'Robert'];
 
+// Définir une variable constante 'garfield' avec la valeur du 1er élément de 'pets'
+const garfield = pets[0];
+
+// Définir une variable constante 'lastPet' avec la valeur du dernier élément de 'pets'
+const lastPet = pets[pets.length - 1];
+
 /**
  * Définir une variable constante 'jon' avec:
  * - une propriété 'firstname' et la valeur de la variable firstname
