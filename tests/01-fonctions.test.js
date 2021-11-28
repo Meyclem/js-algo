@@ -63,12 +63,12 @@ describe(`Les fonctions`, () => {
             expect(parametersCount).toEqual(2);
         });
 
-        test(`'Doit renvoyer l'addition si les arguments sont des nombres`, async () => {
+        test(`Doit renvoyer l'addition si les arguments sont des nombres`, async () => {
             expect(add(1, 2)).toEqual(3);
             expect(add(-4 , 2)).toEqual(-2);
         });
 
-        test(`'Doit renvoyer 'NaN' si au moins l'un des arguments n'est pas un nombre`, async () => {
+        test(`Doit renvoyer 'NaN' si au moins l'un des arguments n'est pas un nombre`, async () => {
             expect(add(false, `plouf`)).toBe(NaN);
             expect(add(NaN, 1)).toBe(NaN);
             expect(add(`pas un nombre`, [])).toBe(NaN);

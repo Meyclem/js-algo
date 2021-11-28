@@ -9,7 +9,7 @@ const fs = require('fs');
  * @param {Object} codeReplacement - parameters for the code replacement with `String.Prototype.Replace()`
  * @param {RegExp} codeReplacement.regex - Regex used for the replacement in the code
  * @param {string} codeReplacement.string - Will be inserted in place of the regex match 
- * @returns {Promise<{ value: unknown, keyword: string }>} a `Promise` resolving to the value of the variable or function. If value is a function, keyword will be `""`
+ * @returns {Promise<{ value: unknown, keyword: string }>} a `Promise` resolving to the value of the variable or function.
  */
 const findInCode = async (id, filePath, codeReplacement = null) => {
     const code = await readCode(filePath).then(code =>  codeReplacement
