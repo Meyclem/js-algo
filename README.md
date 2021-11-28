@@ -41,10 +41,9 @@ const promo = 'Zagreus';
 On a prévu quelques tests pour toi. Pour voir ça, lance ça dans ton terminal:
 
 ```bash
-jest 00-variables
+jest variables # lance les tests pout le fichier ./src/00-variables
+jest fonctions # lance les tests pout le fichier ./src/01-fonctions
 ```
-
-> c'est pour dire "test le fichier 00-variables"
 
 et ça va te sortir plein de trucs 😱
 
