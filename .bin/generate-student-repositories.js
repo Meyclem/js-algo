@@ -96,7 +96,8 @@ const makeStudentRepo = async () => {
     const testFiles = fs.readdirSync(targetPath + '/' + testsPath)
     console.log(testFiles)
     // const filePath = path.resolve(__dirname, `../../src.00-exemple/01-exemple.js`);
-    await sh(`sed -i -e 's/src.00-exemple/src/g'` + " " + targetPath + '/' + testsPath + "/" + testFiles[0])
+    await sh(`sed -ie 's/src.00-exemple/src/g'` + " " + targetPath + '/' + testsPath + "/" + testFiles[0])
+    await rmRf(targetPath + '/' + testsPath + "/" + testFiles[0] + "e")
     fs.renameSync(`${targetPath}/src/README.md`, `${targetPath}/README.md`);
 };
 
