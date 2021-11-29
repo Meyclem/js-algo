@@ -10,7 +10,7 @@ Il va falloir lancer quelques commandes, que nous expliquerons plus en détail d
 Tout, d'abord, il faut cloner ce repo! Ensuite, va dans le dossier et lance ça dans ton terminal:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Ils sont où les exercices?
