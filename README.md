@@ -32,7 +32,7 @@ Il faut donc ajouter ta définition de variable. Attention, **prends bien le tem
 Allez, la première c'est 🎁:
 
 ```js
-// Définir une variable modifiable nommée promo et lui attributer la valeur "Zagreus"
+// Définir une variable constante nommée promo et lui attributer la valeur "Zagreus"
 const promo = 'Zagreus';
 ```
 
@@ -41,9 +41,12 @@ const promo = 'Zagreus';
 On a prévu quelques tests pour toi. Pour voir ça, lance ça dans ton terminal:
 
 ```bash
-jest variables # lance les tests pout le fichier ./src/00-variables
-jest fonctions # lance les tests pout le fichier ./src/01-fonctions
+npm test variables # lance les tests pout le fichier ./src/00-variables
+npm test fonctions # lance les tests pout le fichier ./src/01-fonctions
 ```
+> C'est quoi `npm`?
+>
+> T'inquiète pas, on voit ça dans quelques jours 😏
 
 et ça va te sortir plein de trucs 😱
 
@@ -95,8 +98,8 @@ PASS  tests/00-variables.test.js
     ✓ Définir une variable constante 'firstname' avec le string 'John'
     ✓ Définir une variable modifiable 'age' avec le chiffre '42'
     ✓ Définir une variable constante 'oneMoreYear' avec le chiffre '1'
-    ✓ Définir une variable modifiable 'happyBirthsday' avec la l'addition de age et oneMoreYear
-    ✓ Changer la valeur de 'age' change la valeur de 'happyBirthsday'
+    ✓ Définir une variable modifiable 'happyBirthday' avec la l'addition de age et oneMoreYear
+    ✓ Changer la valeur de 'age' change la valeur de 'happyBirthday'
     ✓ Définir une variable 'pets' contenant les strings 'Garfield', 'Félix', 'Rantaplan', 'Robert'
     ✓ Définir la variable 'jon' avec les bonnes propriétés
     ✓ Changer la valeur de 'age' change l'age de John

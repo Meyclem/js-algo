@@ -33,15 +33,15 @@ describe(`Les variables`, () => {
         expect(oneMoreYear).toBe(1);
     });
     
-    test(`Définir une variable modifiable 'happyBirthsday' avec la l'addition de age et oneMoreYear`, async () => {
-        const {value: happyBirthsday, keyword} = await findInCode(`happyBirthsday`, filePath);
+    test(`Définir une variable modifiable 'happyBirthday' avec la l'addition de age et oneMoreYear`, async () => {
+        const {value: happyBirthday, keyword} = await findInCode(`happyBirthday`, filePath);
     
         expect(keyword).toBe(`let`);
-        expect(happyBirthsday).toBe(43);
+        expect(happyBirthday).toBe(43);
     });
 
-    test(`Changer la valeur de 'age' change la valeur de 'happyBirthsday'`, async () => {
-        const { value: age } = await findInCode(`happyBirthsday`, filePath, {
+    test(`Changer la valeur de 'age' change la valeur de 'happyBirthday'`, async () => {
+        const { value: age } = await findInCode(`happyBirthday`, filePath, {
             regex: /(let|const)(\s*?)age(\s*?)=(\s*?)([0-9]{2})(\s*?);/,
             string: `const age = 1;`
         });

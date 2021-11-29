@@ -203,7 +203,6 @@ describe(`Les fonctions`, () => {
             } catch(error) {
                 expect(error.message).toBe(`Must be 'min < max'`);
             }
-
         });
     });
 });

@@ -30,7 +30,6 @@ const findInCode = async (id, filePath, codeReplacement = null) => {
             }
         },
         visitFunctionDeclaration: function(node) {
-            
             if (node.value.id.name === id) {
                 declaration.keyword = 'function';
                 this.abort();

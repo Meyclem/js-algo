@@ -4,7 +4,7 @@
  * TODO: Écris ton code en dessous de chaque commentaire 👇
  */
 
-// Définir une variable modifiable nommée promo et lui attributer la valeur "Zagreus"
+// Définir une variable constante nommée promo et lui attributer la valeur "Zagreus"
 const promo = 'Zagreus';
 
 // Définir une variable constante 'firstname' avec la valeur 'John'
@@ -16,8 +16,8 @@ let age = 42;
 // Définir une variable constante 'oneMoreYear' avec le chiffre '1'
 const oneMoreYear = 1;
 
-// Définir une variable modifiable 'happyBirthsday' avec la l'addition de age et oneMoreYear
-let happyBirthsday = age + oneMoreYear;
+// Définir une variable modifiable 'happyBirthday' avec la l'addition de age et oneMoreYear
+let happyBirthday = age + oneMoreYear;
 
 // Définir une variable 'pets' contenant les strings 'Garfield', 'Félix', 'Rantaplan', 'Robert'
 const pets = ['Garfield', 'Félix', 'Rantaplan', 'Robert'];
