@@ -1,11 +1,11 @@
 /* eslint quotes: ["error", "backtick"] */
-const { findInCode, readCode } = require(`./read-code`);
+const { findInCode, readCode } = require(`../read-code`);
 const path = require(`path`);
 
 describe(`Exempes de TDD`, () => {
     let fakeConsoleLog = jest.spyOn(console, `log`).mockImplementation((string) => logs += `${string}`);
     let fakeMathRandom;
-    const filePath = path.resolve(__dirname, `../src/000-exemple.js`);
+    const filePath = path.resolve(__dirname, `../../src.00-exemple/01-exemple.js`);
     let logs = ``;
     
     beforeEach(() => {
