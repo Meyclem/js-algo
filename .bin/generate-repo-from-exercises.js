@@ -26,7 +26,7 @@ async function rmRf(target) {
         await sh(cmd);
     } catch(error) {
         if (error.message.match(/Error: ENOENT: no such file or directory/)) {
-            console.error(`🔥 no such file or directory: ${target}`);
+            console.log(`🔥 no such file or directory: ${target}`);
         }
     }
 }
@@ -38,7 +38,7 @@ async function initGitRepo(path) {
 }
 
 async function generateExercisesRepositories(exercisesNames = []) {
-    const __dirname = path.resolve(path.dirname('')) + '/';
+    const __dirname = path.resolve(path.dirname('../')) + '/';
     const exercisesDir = __dirname + 'exercises/';
     const repoNames =  fs.readdirSync(exercisesDir);
     let exercisesToGenerate = repoNames;
@@ -51,11 +51,9 @@ async function generateExercisesRepositories(exercisesNames = []) {
         }
     }
 
-    const targetPath = __dirname.replace('js-algo/', '');
+    const targetPath = __dirname.replace('js-algo-exercises/', '');
 
     const generatedExercises = [];
-
-    console.log(exercisesToGenerate);
 
     for await (const exercise of exercisesToGenerate) {
         const exercisePath = exercisesDir + exercise;
@@ -74,7 +72,7 @@ async function generateExercisesRepositories(exercisesNames = []) {
 
 generateExercisesRepositories(process.argv.slice(2))
     .then((generatedExercises) => {
-        console.log('Exercises sucessfully generated');
-        console.log(generatedExercises.join('\n  - '));
+        console.log('✅ Exercises sucessfully generated');
+        console.log(generatedExercises.join('\n📁 '));
     })
     .catch((error) => console.log('💥 ' + error.message));

@@ -1,9 +1,35 @@
-// ⚠️ avant toute PR, bien lire la doc "Contributing" dans "Helpful resources" à droite, ou en bas de ce textarea ⚠️
+## Description
 
-// Description de la PR
-Modification de  / Amélioration de / Correction de / etc.
+<!--- Une description de la PR, avec les changements / améliorations / suppressions effectués -->
 
-// Laisse le mot-clé fixes, et remplis le numéro de l'issue liée (supprimer si pas d'issue) ou le lien de l'issue
+## Issues
+
+<!--- Laisse le mot-clé fixes, et remplis le numéro de l'issue liée (supprimer si pas d'issue) ou le lien de l'issue -->
 Issue : Fixes #numero
 
-// Une fois la PR correctement renseignée, tu peux supprimer ces commentaires 😉
+## Type de changement
+
+<!--- pour cocher la checkbox, mets `[x]` -->
+
+- [ ] **Chore** (non-breaking change qui change, améliore la code base).
+- [ ] **Bug fix** (non-breaking change qui fixe un bug).
+- [ ] **New feature** (non-breaking change qui ajoute une fonctionnalité).
+- [ ] **Breaking change** (fix ou feature qui provoquerait un changement des fonctionnalités existantes).
+
+## Liste de dépendances ajoutées
+
+<!--- Si tu rajoutes des dépendances, évidemment -->
+
+## Screenshots
+
+<!--- Si nécessaire, par exemple pour illustrer des bugs ou des exercices -->
+
+## Checklist
+
+<!--- pour cocher la checkbox, mets `[x]` -->
+
+- [ ] J'ai relu mon code.
+- [ ] J'ai ajouté la documentation nécessaire.
+- [ ] Mes changements n'ajoutent pas de nouveaux warnings.
+- [ ] J'ai ajouté des tests pour ma feature.
+- [ ] Tous les nouveaux et anciens testent passent.
