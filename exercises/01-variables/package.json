@@ -1,0 +1,19 @@
+{
+  "name": "js-algo-01-variables",
+  "version": "0.0.1",
+  "description": "Série d'exercices pour s'entraîner à l'aglo en JavaScript",
+  "main": "index.js",
+  "author": "Meyclem",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1",
+    "recast": "^0.20.5"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

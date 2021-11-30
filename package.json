@@ -1,0 +1,22 @@
+{
+  "name": "javascript-algo-monorepo",
+  "version": "0.0.1",
+  "description": "Série d'exercices pour s'entraîner à l'aglo en JavaScript",
+  "main": "index.js",
+  "author": "Meyclem",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "workspaces": [
+    "./exercises/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1",
+    "recast": "^0.20.5"
+  },
+  "scripts": {
+    "generate-repositories": "node .bin/generate-repo-from-exercises.js"
+  }
+}
