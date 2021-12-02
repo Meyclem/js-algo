@@ -3,7 +3,7 @@ name: CI testing
 on: pull_request
 
 jobs:
-  build:
+  test-exercices:
 
     runs-on: ubuntu-latest
 
