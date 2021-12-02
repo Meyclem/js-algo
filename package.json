@@ -17,6 +17,7 @@
     "recast": "^0.20.5"
   },
   "scripts": {
-    "generate-repositories": "node .bin/generate-repo-from-exercises.js"
+    "generate-repositories": "node .bin/generate-repo-from-exercises.js",
+    "test": "npm run test --workspaces"
   }
 }
