@@ -15,6 +15,7 @@ Issue : Fixes #numero
 - [ ] **Bug fix** (non-breaking change qui fixe un bug).
 - [ ] **New feature** (non-breaking change qui ajoute une fonctionnalité).
 - [ ] **Breaking change** (fix ou feature qui provoquerait un changement des fonctionnalités existantes).
+- [ ] **Nouvel exercice**
 
 ## Liste de dépendances ajoutées
 

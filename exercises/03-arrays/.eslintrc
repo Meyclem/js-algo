@@ -1,0 +1,19 @@
+{
+  "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+      "indent": ["error", 4],
+      "no-unused-vars": "error",
+      "no-var": "error",
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"]
+  }
+}
